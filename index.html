@@ -2,301 +2,542 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>Reetik Rajan | Security Engineer</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+        <title>Reetik Rajan | Security Engineer & Blockchain Specialist</title>
+        <meta name="description" content="Security Engineer specializing in blockchain security, DevSecOps, and system architecture. Expert in Solidity, EVM, and Bitcoin security." />
+        
+        <!-- Preload critical assets -->
+        <link rel="preload" href="style.css" as="style" />
+        <link rel="preload" href="main.js" as="script" />
+        
+        <!-- Stylesheets -->
         <link rel="stylesheet" href="style.css" />
-        <!-- Google Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet" />
-        <!-- FontAwesome for icons -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
-        <!-- Favicon (Placeholder) -->
-        <link rel="icon" type="image/png" href="placeholder-favicon.png" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+        
+        <!-- Favicon -->
+        <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔒</text></svg>" />
     </head>
     <body>
-        <!-- Navigation Bar -->
-        <nav>
-            <div class="container nav-container">
-                <div class="logo">
-                    <a href="#hero">Reetik Rajan</a>
+        <!-- Navigation -->
+        <nav class="navbar" id="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <a href="#home" class="logo-link">
+                        <span class="logo-text">Reetik Rajan</span>
+                        <span class="logo-subtitle">Security Engineer</span>
+                    </a>
                 </div>
-                <ul class="nav-links">
-                    <li><a href="#hero">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#freelance">Consulting</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#certifications">Certifications</a></li>
-                    <li><a href="#speaking">Speaking</a></li>
-                    <li><a href="#blog">Blog</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
+                
+                <div class="nav-menu" id="nav-menu">
+                    <a href="#home" class="nav-link">Home</a>
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#experience" class="nav-link">Experience</a>
+                    <a href="#projects" class="nav-link">Projects</a>
+                    <a href="#consulting" class="nav-link">Consulting</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                </div>
+                
+                <div class="nav-toggle" id="nav-toggle">
+                    <span class="hamburger"></span>
+                </div>
             </div>
         </nav>
 
         <!-- Hero Section -->
-        <section id="hero" class="hero">
-            <div class="container hero-content">
-                <h1>Reetik Rajan</h1>
-                <h2>Security Engineer | Blockchain &amp; DevSecOps Specialist</h2>
-                <p class="hero-bio">
-                    Versatile security engineer with 3+ years of experience in blockchain security, DevSecOps, and system
-                    architecture. Proficient in Solidity, EVM, and Bitcoin, with a strong track record in securing assets,
-                    leading audits, and optimizing secure infrastructure.
-                </p>
-                <div class="hero-buttons">
-                    <a href="./asset/Reetik Rajan.pdf" class="btn">View Resume</a>
-                    <a href="#contact" class="btn">Contact Me</a>
+        <section id="home" class="hero">
+            <div class="hero-background">
+                <div class="hero-particles"></div>
+            </div>
+            <div class="hero-container">
+                <div class="hero-content">
+                    <div class="hero-badge">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>Security Engineer</span>
+                    </div>
+                    
+                    <h1 class="hero-title">
+                        <span class="hero-name">Reetik Rajan</span>
+                        <span class="hero-subtitle">Blockchain & DevSecOps Specialist</span>
+                    </h1>
+                    
+                    <p class="hero-description">
+                        Versatile security engineer with 3+ years of experience in blockchain security, 
+                        DevSecOps, and system architecture. Proficient in Solidity, EVM, and Bitcoin, 
+                        with a strong track record in securing assets, leading audits, and optimizing secure infrastructure.
+                    </p>
+                    
+                    <div class="hero-actions">
+                        <a href="./asset/Reetik Rajan.pdf" class="btn btn-primary" target="_blank">
+                            <i class="fas fa-download"></i>
+                            Download Resume
+                        </a>
+                        <a href="#contact" class="btn btn-secondary">
+                            <i class="fas fa-envelope"></i>
+                            Get In Touch
+                        </a>
+                    </div>
+                    
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">3+</span>
+                            <span class="stat-label">Years Experience</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">50+</span>
+                            <span class="stat-label">Security Audits</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">4</span>
+                            <span class="stat-label">ETHIndia Awards</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="hero-social">
-                    <a href="mailto:r4reetik+web@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
-                    <a href="https://www.linkedin.com/in/r4reetik" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://x.com/r4reetik" title="Twitter"><i class="fab fa-twitter"></i></a>
+                
+                <div class="hero-visual">
+                    <div class="hero-image-container">
+                        <img src="./asset/Reetik.jpeg" alt="Reetik Rajan" class="hero-image">
+                        <div class="hero-image-overlay"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hero-scroll">
+                <div class="scroll-indicator">
+                    <span>Scroll to explore</span>
+                    <i class="fas fa-chevron-down"></i>
                 </div>
             </div>
         </section>
 
-        <!-- About Me Section -->
-        <section id="about" class="section">
+        <!-- About Section -->
+        <section id="about" class="section about-section">
             <div class="container">
-                <h2>About Me</h2>
+                <div class="section-header">
+                    <h2 class="section-title">About Me</h2>
+                    <p class="section-subtitle">Passionate about securing the future of decentralized technology</p>
+                </div>
+                
                 <div class="about-content">
-                    <div class="about-image">
-                        <img src="./asset/Reetik.jpeg" alt="Reetik's Photo" />
-                    </div>
                     <div class="about-text">
-                        <p>
-                            I am a dedicated security engineer specializing in blockchain and DevSecOps. With a passion for
-                            protecting digital assets and optimizing secure infrastructures, I thrive on solving complex
-                            security challenges and delivering robust solutions.
-                        </p>
-                        <p>
-                            My approach to security is rooted in continuous learning, proactive defense strategies, and a
-                            commitment to excellence. I believe in building secure systems that not only protect assets but also
-                            foster innovation and growth.
-                        </p>
-                        <p>
-                            <strong>Expertise:</strong> Blockchain Security, DevSecOps, Penetration Testing, Vulnerability
-                            Assessments, and more.
-                        </p>
+                        <div class="about-intro">
+                            <p>
+                                I am a dedicated security engineer specializing in blockchain and DevSecOps. 
+                                With a passion for protecting digital assets and optimizing secure infrastructures, 
+                                I thrive on solving complex security challenges and delivering robust solutions.
+                            </p>
+                            <p>
+                                My approach to security is rooted in continuous learning, proactive defense strategies, 
+                                and a commitment to excellence. I believe in building secure systems that not only protect 
+                                assets but also foster innovation and growth.
+                            </p>
+                        </div>
+                        
+                        <div class="skills-grid">
+                            <div class="skill-category">
+                                <h3>Blockchain Security</h3>
+                                <div class="skill-tags">
+                                    <span class="skill-tag">Solidity</span>
+                                    <span class="skill-tag">EVM</span>
+                                    <span class="skill-tag">Bitcoin</span>
+                                    <span class="skill-tag">Smart Contracts</span>
+                                    <span class="skill-tag">zk-SNARKs</span>
+                                </div>
+                            </div>
+                            
+                            <div class="skill-category">
+                                <h3>DevSecOps</h3>
+                                <div class="skill-tags">
+                                    <span class="skill-tag">CI/CD Security</span>
+                                    <span class="skill-tag">Infrastructure Security</span>
+                                    <span class="skill-tag">Container Security</span>
+                                    <span class="skill-tag">AWS Security</span>
+                                </div>
+                            </div>
+                            
+                            <div class="skill-category">
+                                <h3>Security Testing</h3>
+                                <div class="skill-tags">
+                                    <span class="skill-tag">Penetration Testing</span>
+                                    <span class="skill-tag">Vulnerability Assessment</span>
+                                    <span class="skill-tag">Code Review</span>
+                                    <span class="skill-tag">Security Audits</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="about-visual">
+                        <div class="about-card">
+                            <div class="card-header">
+                                <i class="fas fa-certificate"></i>
+                                <h3>Certifications</h3>
+                            </div>
+                            <ul class="cert-list">
+                                <li>CEH - Certified Ethical Hacker (2021-2024)</li>
+                                <li>AWS Certified Cloud Practitioner (2022-2025)</li>
+                                <li>OSINT by TCM Security</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Work Experience Section -->
-        <section id="experience" class="section">
+        <!-- Experience Section -->
+        <section id="experience" class="section experience-section">
             <div class="container">
-                <h2>Work Experience</h2>
+                <div class="section-header">
+                    <h2 class="section-title">Professional Experience</h2>
+                    <p class="section-subtitle">My journey in cybersecurity and blockchain security</p>
+                </div>
+                
                 <div class="timeline">
                     <div class="timeline-item">
-                        <h3>Lead Security Engineer | Catalog</h3>
-                        <span class="timeline-date">Feb 2024 - Present</span>
-                        <ul>
-                            <li>Lead and oversee security audits and vulnerability assessments.</li>
-                            <li>Architect and implement secure system designs.</li>
-                            <li>Mentor and guide junior security team members.</li>
-                        </ul>
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <h3>Lead Security Engineer</h3>
+                                <span class="company">Catalog</span>
+                                <span class="duration">Feb 2024 - Present</span>
+                            </div>
+                            <ul class="timeline-achievements">
+                                <li>Lead and oversee security audits and vulnerability assessments</li>
+                                <li>Architect and implement secure system designs</li>
+                                <li>Mentor and guide junior security team members</li>
+                            </ul>
+                        </div>
                     </div>
+                    
                     <div class="timeline-item">
-                        <h3>Product Security Analyst | Catalog</h3>
-                        <span class="timeline-date">Aug 2022 - Feb 2024</span>
-                        <ul>
-                            <li>Conducted comprehensive security reviews of product features.</li>
-                            <li>Collaborated with development teams to address security flaws.</li>
-                            <li>Implemented automated security testing protocols.</li>
-                        </ul>
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <h3>Product Security Analyst</h3>
+                                <span class="company">Catalog</span>
+                                <span class="duration">Aug 2022 - Feb 2024</span>
+                            </div>
+                            <ul class="timeline-achievements">
+                                <li>Conducted comprehensive security reviews of product features</li>
+                                <li>Collaborated with development teams to address security flaws</li>
+                                <li>Implemented automated security testing protocols</li>
+                            </ul>
+                        </div>
                     </div>
+                    
                     <div class="timeline-item">
-                        <h3>Application Security Intern | Catalog</h3>
-                        <span class="timeline-date">Jan 2022 - Jul 2022</span>
-                        <ul>
-                            <li>Assisted in identifying and mitigating security vulnerabilities.</li>
-                            <li>Supported security incident response and documentation.</li>
-                            <li>Gained hands-on experience with application security best practices.</li>
-                        </ul>
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <h3>Application Security Intern</h3>
+                                <span class="company">Catalog</span>
+                                <span class="duration">Jan 2022 - Jul 2022</span>
+                            </div>
+                            <ul class="timeline-achievements">
+                                <li>Assisted in identifying and mitigating security vulnerabilities</li>
+                                <li>Supported security incident response and documentation</li>
+                                <li>Gained hands-on experience with application security best practices</li>
+                            </ul>
+                        </div>
                     </div>
+                    
                     <div class="timeline-item">
-                        <h3>Security Practitioner Intern | Azure Skynet</h3>
-                        <span class="timeline-date">Apr 2018 - Jun 2018</span>
-                        <ul>
-                            <li>Participated in security training and practical exercises.</li>
-                            <li>Supported team in vulnerability assessments and penetration tests.</li>
-                            <li>Documented findings and provided recommendations for improvement.</li>
-                        </ul>
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <h3>Security Practitioner Intern</h3>
+                                <span class="company">Azure Skynet</span>
+                                <span class="duration">Apr 2018 - Jun 2018</span>
+                            </div>
+                            <ul class="timeline-achievements">
+                                <li>Participated in security training and practical exercises</li>
+                                <li>Supported team in vulnerability assessments and penetration tests</li>
+                                <li>Documented findings and provided recommendations for improvement</li>
+                            </ul>
+                        </div>
                     </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Consultant & Freelance Work Section -->
-        <section id="freelance" class="section">
-            <div class="container">
-                <h2>Consultant &amp; Freelance Work</h2>
-                <div class="freelance-item">
-                    <h3>Mindler (Web2 Penetration Testing)</h3>
-                    <p>
-                        Conducted penetration tests for Mindler's web applications to identify vulnerabilities and ensure robust
-                        security measures.
-                    </p>
-                    <ul style="margin-left: 20px">
-                        <li>Performed comprehensive security assessments.</li>
-                        <li>Provided actionable remediation steps.</li>
-                    </ul>
-                </div>
-                <div class="freelance-item">
-                    <h3>SAFU (Smart Contract Audits)</h3>
-                    <p>
-                        Reviewed and audited smart contracts to ensure security and reliability for decentralized applications.
-                    </p>
-                    <ul style="margin-left: 20px">
-                        <li>Identified potential vulnerabilities in contract code.</li>
-                        <li>Recommended security improvements and best practices.</li>
-                    </ul>
-                </div>
-                <div class="freelance-item">
-                    <h3>Dr. Code (AI Security Consultant)</h3>
-                    <p>
-                        Provided security consultancy for AI-driven projects, ensuring that the integration of AI is aligned
-                        with secure development practices.
-                    </p>
-                    <ul style="margin-left: 20px">
-                        <li>Evaluated security risks in AI implementations.</li>
-                        <li>Advised on integrating secure AI frameworks.</li>
-                    </ul>
                 </div>
             </div>
         </section>
 
         <!-- Projects Section -->
-        <section id="projects" class="section">
+        <section id="projects" class="section projects-section">
             <div class="container">
-                <h2>Projects</h2>
+                <div class="section-header">
+                    <h2 class="section-title">Featured Projects</h2>
+                    <p class="section-subtitle">Innovative solutions in blockchain and security</p>
+                </div>
+                
                 <div class="projects-grid">
                     <div class="project-card">
-                        <img src="./asset/dpi.svg" alt="DPI - Decentralized Payment Interface" />
+                        <div class="project-image">
+                            <img src="./asset/dpi.svg" alt="DPI - Decentralized Payment Interface">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="https://github.com/r4reetik/dpi" target="_blank" class="project-link">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
                         <div class="project-content">
+                            <div class="project-badge">ETHIndia Winner - $2,000</div>
                             <h3>DPI - Decentralized Payment Interface</h3>
-                            <p>
-                                A secure payment interface for decentralized transactions.<br />
-                                <strong>Award:</strong> ETHIndia Winner - $2,000
-                            </p>
-                            <p><strong>Tech Stack:</strong> Solidity, Web3.js, React</p>
-                            <a href="https://github.com/r4reetik/dpi" target="_blank">View on GitHub</a>
+                            <p>A secure payment interface for decentralized transactions with advanced security features.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Solidity</span>
+                                <span class="tech-tag">Web3.js</span>
+                                <span class="tech-tag">React</span>
+                            </div>
                         </div>
                     </div>
+                    
                     <div class="project-card">
-                        <img src="./asset/zk-rizz.png" alt="zkRizz - Web3 Dating Platform" />
+                        <div class="project-image">
+                            <img src="./asset/zk-rizz.png" alt="zkRizz - Web3 Dating Platform">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="https://github.com/r4reetik/zk-rizz" target="_blank" class="project-link">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
                         <div class="project-content">
+                            <div class="project-badge">ETHIndia Winner - $1,250</div>
                             <h3>zkRizz - Web3 Dating Platform</h3>
-                            <p>
-                                A decentralized dating platform with privacy-preserving features. <br />
-                                <strong>Award:</strong> ETHIndia Winner - $1,250
-                            </p>
-                            <p><strong>Tech Stack:</strong> Solidity, zk-SNARKs, Node.js</p>
-                            <a href="https://github.com/r4reetik/zk-rizz" target="_blank">View on GitHub</a>
+                            <p>A decentralized dating platform with privacy-preserving features using zero-knowledge proofs.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Solidity</span>
+                                <span class="tech-tag">zk-SNARKs</span>
+                                <span class="tech-tag">Node.js</span>
+                            </div>
                         </div>
                     </div>
+                    
                     <div class="project-card">
-                        <img src="./asset/p2p.png" class="project-round-img" alt="Kademlia p2p (Golang Implementation)" />
-
+                        <div class="project-image">
+                            <img src="./asset/p2p.png" alt="Kademlia p2p Implementation">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="https://github.com/r4reetik/kademlia-p2p" target="_blank" class="project-link">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
                         <div class="project-content">
                             <h3>Kademlia p2p (Golang Implementation)</h3>
-                            <p>A robust implementation of the Kademlia protocol for peer-to-peer networks.</p>
-                            <p><strong>Tech Stack:</strong> Golang</p>
-                            <a href="https://github.com/r4reetik/kademlia-p2p" target="_blank">View on GitHub</a>
+                            <p>A robust implementation of the Kademlia protocol for peer-to-peer networks with enhanced security.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Golang</span>
+                                <span class="tech-tag">P2P Networks</span>
+                                <span class="tech-tag">Distributed Systems</span>
+                            </div>
                         </div>
                     </div>
+                    
                     <div class="project-card">
-                        <img src="./asset/debloat.svg" alt="Debloat Android - Android System App Removal Tool" />
-                        <!-- Replace with actual project screenshot -->
+                        <div class="project-image">
+                            <img src="./asset/debloat.svg" alt="Debloat Android Tool">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="https://github.com/r4reetik/debloat-android" target="_blank" class="project-link">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
                         <div class="project-content">
-                            <h3>Debloat Android - Android System App Removal Tool</h3>
-                            <p>
-                                A tool to remove unwanted system apps from Android devices, optimizing performance and security.
-                            </p>
-                            <p><strong>Tech Stack:</strong> eel, Android SDK</p>
-                            <a href="https://github.com/r4reetik/debloat-android" target="_blank">View on GitHub</a>
+                            <h3>Debloat Android - System App Removal Tool</h3>
+                            <p>A comprehensive tool to remove unwanted system apps from Android devices, optimizing performance and security.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">Android SDK</span>
+                                <span class="tech-tag">Eel</span>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Certifications & Achievements Section -->
-        <section id="certifications" class="section">
+        <!-- Consulting Section -->
+        <section id="consulting" class="section consulting-section">
             <div class="container">
-                <h2>Certifications &amp; Achievements</h2>
-                <ul class="certifications-list">
-                    <li><strong>CEH - Certified Ethical Hacker</strong> (2021-2024)</li>
-                    <li><strong>AWS Certified Cloud Practitioner</strong> (2022-2025)</li>
-                    <li><strong>OSINT by TCM Security</strong></li>
-                </ul>
+                <div class="section-header">
+                    <h2 class="section-title">Consulting & Freelance</h2>
+                    <p class="section-subtitle">Professional security services and expertise</p>
+                </div>
+                
+                <div class="consulting-grid">
+                    <div class="consulting-card">
+                        <div class="consulting-icon">
+                            <i class="fas fa-bug"></i>
+                        </div>
+                        <h3>Mindler</h3>
+                        <span class="consulting-type">Web2 Penetration Testing</span>
+                        <p>Conducted comprehensive penetration tests for Mindler's web applications to identify vulnerabilities and ensure robust security measures.</p>
+                        <ul class="consulting-services">
+                            <li>Comprehensive security assessments</li>
+                            <li>Actionable remediation steps</li>
+                            <li>Security best practices implementation</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="consulting-card">
+                        <div class="consulting-icon">
+                            <i class="fas fa-file-contract"></i>
+                        </div>
+                        <h3>SAFU</h3>
+                        <span class="consulting-type">Smart Contract Audits</span>
+                        <p>Reviewed and audited smart contracts to ensure security and reliability for decentralized applications.</p>
+                        <ul class="consulting-services">
+                            <li>Vulnerability identification in contract code</li>
+                            <li>Security improvements and best practices</li>
+                            <li>Comprehensive audit reports</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="consulting-card">
+                        <div class="consulting-icon">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <h3>Dr. Code</h3>
+                        <span class="consulting-type">AI Security Consultant</span>
+                        <p>Provided security consultancy for AI-driven projects, ensuring that the integration of AI is aligned with secure development practices.</p>
+                        <ul class="consulting-services">
+                            <li>Security risk evaluation in AI implementations</li>
+                            <li>Secure AI framework integration</li>
+                            <li>AI security best practices</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <!-- Public Speaking & Events Section -->
-        <section id="speaking" class="section">
+        <!-- Speaking Section -->
+        <section id="speaking" class="section speaking-section">
             <div class="container">
-                <h2>Public Speaking &amp; Events</h2>
-                <div class="speaking-item">
-                    <h3>AMA Session with Garden Finance &amp; Trail of Bits</h3>
-                    <span class="event-date">July 2024</span>
-                    <p>
-                        Participated in an AMA session discussing industry best practices in security and decentralized finance.
-                    </p>
+                <div class="section-header">
+                    <h2 class="section-title">Public Speaking & Events</h2>
+                    <p class="section-subtitle">Sharing knowledge and insights with the community</p>
                 </div>
-                <div class="speaking-item">
-                    <h3>Blockchain Bytes @ Blockchained India</h3>
-                    <span class="event-date">Feb 2024</span>
-                    <p>Delivered a talk on blockchain security and decentralized technologies.</p>
+                
+                <div class="speaking-grid">
+                    <div class="speaking-card">
+                        <div class="speaking-date">July 2024</div>
+                        <h3>AMA Session with Garden Finance & Trail of Bits</h3>
+                        <p>Participated in an AMA session discussing industry best practices in security and decentralized finance, sharing insights on blockchain security challenges and solutions.</p>
+                        <div class="speaking-tags">
+                            <span class="speaking-tag">Blockchain Security</span>
+                            <span class="speaking-tag">DeFi</span>
+                        </div>
+                    </div>
+                    
+                    <div class="speaking-card">
+                        <div class="speaking-date">Feb 2024</div>
+                        <h3>Blockchain Bytes @ Blockchained India</h3>
+                        <p>Delivered a comprehensive talk on blockchain security and decentralized technologies, covering emerging threats and mitigation strategies.</p>
+                        <div class="speaking-tags">
+                            <span class="speaking-tag">Blockchain</span>
+                            <span class="speaking-tag">Security</span>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </section>
-
-        <!-- Blog/Articles Section -->
-        <section id="blog" class="section">
-            <div class="container">
-                <h2>Blog &amp; Articles</h2>
-                <p>
-                    Read my latest articles and research on <a href="https://r4reetik.medium.com/" target="_blank">Medium</a>.
-                </p>
             </div>
         </section>
 
         <!-- Contact Section -->
-        <section id="contact" class="section">
+        <section id="contact" class="section contact-section">
             <div class="container">
-                <h2>Contact</h2>
-                <p style="text-align: center">
-                    If you'd like to get in touch, feel free to reach out via <strong>email</strong> or connect with me on
-                    <strong>LinkedIn</strong>.
-                </p>
-                <ul class="contact-links">
-                    <li>
-                        <a href="mailto:r4reetik+web@gmail.com"> <i class="fas fa-envelope"></i> r4reetik@gmail.com </a>
-                    </li>
-                    <li>
-                        <a href="https://www.linkedin.com/in/r4reetik" target="_blank">
-                            <i class="fab fa-linkedin"></i> LinkedIn
+                <div class="section-header">
+                    <h2 class="section-title">Get In Touch</h2>
+                    <p class="section-subtitle">Let's discuss your security needs and potential collaborations</p>
+                </div>
+                
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <h3>Email</h3>
+                            <p>Ready to discuss your project</p>
+                            <a href="mailto:r4reetik+web@gmail.com" class="contact-link">r4reetik@gmail.com</a>
+                        </div>
+                        
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fab fa-linkedin"></i>
+                            </div>
+                            <h3>LinkedIn</h3>
+                            <p>Connect professionally</p>
+                            <a href="https://www.linkedin.com/in/r4reetik" target="_blank" class="contact-link">linkedin.com/in/r4reetik</a>
+                        </div>
+                        
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fab fa-twitter"></i>
+                            </div>
+                            <h3>Twitter</h3>
+                            <p>Follow for updates</p>
+                            <a href="https://x.com/r4reetik" target="_blank" class="contact-link">@r4reetik</a>
+                        </div>
+                        
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fab fa-github"></i>
+                            </div>
+                            <h3>GitHub</h3>
+                            <p>View my projects</p>
+                            <a href="https://github.com/r4reetik" target="_blank" class="contact-link">github.com/r4reetik</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-cta">
+                        <h3>Ready to work together?</h3>
+                        <p>I'm always interested in new opportunities and collaborations. Whether you need security consulting, smart contract audits, or want to discuss blockchain security, feel free to reach out.</p>
+                        <a href="mailto:r4reetik+web@gmail.com" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i>
+                            Send Message
                         </a>
-                    </li>
-                    <li>
-                        <a href="https://x.com/r4reetik" target="_blank"> <i class="fab fa-twitter"></i> Twitter </a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/r4reetik" target="_blank"> <i class="fab fa-github"></i> GitHub </a>
-                    </li>
-                </ul>
+                    </div>
+                </div>
             </div>
         </section>
 
         <!-- Footer -->
-        <footer>
+        <footer class="footer">
             <div class="container">
-                <p>&copy; 2025 Reetik Rajan. All rights reserved.</p>
+                <div class="footer-content">
+                    <div class="footer-brand">
+                        <h3>Reetik Rajan</h3>
+                        <p>Security Engineer & Blockchain Specialist</p>
+                    </div>
+                    
+                    <div class="footer-links">
+                        <a href="https://r4reetik.medium.com/" target="_blank" class="footer-link">
+                            <i class="fab fa-medium"></i>
+                            Blog
+                        </a>
+                        <a href="./asset/Reetik Rajan.pdf" target="_blank" class="footer-link">
+                            <i class="fas fa-file-pdf"></i>
+                            Resume
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-bottom">
+                    <p>&copy; 2025 Reetik Rajan. All rights reserved.</p>
+                    <p>Built with ❤️ for security and innovation</p>
+                </div>
             </div>
         </footer>
 
+        <!-- Scripts -->
         <script src="main.js"></script>
     </body>
 </html>
